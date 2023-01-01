@@ -36,3 +36,47 @@ body {
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    height: 100vh;
+    padding: 0 32px;
+    background-size: auto 100%;
+    background-position: 60%;
+    background-repeat: no-repeat;
+}
+
+.detail h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.detail p {
+    font-family: Lora;
+    line-height: 150%;
+}
+
+.detail__beauty {
+    background-image: url('/resources/images/section-1.png');
+}
+
+.detail__music {
+    background-image: url('/resources/images/section-2.png');
+}
+.detail__business {
+    background-image: url('/resources/images/section-3.png');
+}
+button {
+    display: block;
+    background: #6D7F9B;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    align-self: flex-start;
+}
