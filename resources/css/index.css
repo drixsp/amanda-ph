@@ -17,24 +17,38 @@ body {
     height: 100vh;
     font-family: 'Noto Serif Display', serif;
     font-size: 96px;
-}
-
-.beauty {
-    background-image: url('/resources/images/hero-1.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
+    background-position: 60%;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.music {
-    background-image: url('/resources/images/hero-2.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+.hero__subsection h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    z-index: 1;
 }
 
-.business {
-    background-image: url('/resources/images/hero-3.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+.hero__subsection .bg-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: 0;
+    height: 100vh;
+    transition: ease-in-out .3s;
+}
+
+.hero__subsection:hover .bg-image {
+    scale: 110%;
+    opacity: .8;
 }
 
 .detail {
@@ -51,13 +65,13 @@ body {
 
 .detail h3 {
     font-family: 'Noto Serif Display', serif;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
     margin: 0;
 }
 
 .detail p {
-    font-family: Lora;
+    font-family: 'Lora', serif;
     line-height: 150%;
 }
 
@@ -71,6 +85,7 @@ body {
 .detail__business {
     background-image: url('/resources/images/section-3.png');
 }
+
 button {
     display: block;
     background: #6D7F9B;
@@ -79,4 +94,11 @@ button {
     border-radius: 4px;
     border: none;
     align-self: flex-start;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5d6879;
+    transition: .3s;
 }
