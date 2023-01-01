@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #1E1E1E;
     margin: 0;
@@ -130,6 +134,10 @@ body {
 
 .detail__music p {
     margin: 0;
+}
+
+.detail__music a {
+    text-decoration: none;
 }
 
 .detail__music img {
