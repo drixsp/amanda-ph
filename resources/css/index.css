@@ -1,0 +1,169 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1E1E1E;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.hero {
+    display: flex;
+}
+
+@media screen and (max-width: 880px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hero__subsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 96px;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.hero__subsection h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 80px;
+    /* Prevent selection of text */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+@media screen and (max-width: 880px) {
+    .hero__subsection h3 {
+        font-size: 96px;
+    }
+}
+
+.hero__subsection .bg-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: 0;
+    transition: ease-in-out .3s;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.hero__subsection:hover .bg-image {
+    scale: 110%;
+    opacity: .8;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    height: 100vh;
+    background-size: cover;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    padding: 0 10%;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.detail p {
+    font-family: 'Lora', serif;
+    line-height: 150%;
+}
+
+/* Beauty Section */
+
+.detail__beauty {
+    background-image: url('/resources/images/section-1.png');
+}
+
+/* Music Section */
+.detail__music {
+    background-image: url('/resources/images/section-2.png');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.detail__music .detail__music-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media screen and (max-width: 880px) {
+    .detail__music {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail__music img {
+        width: 380px;
+    }
+}
+
+.detail__music p {
+    margin: 0;
+}
+
+.detail__music a {
+    text-decoration: none;
+}
+
+.detail__music img {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Business Section */
+
+.detail__business {
+    background-image: url('/resources/images/section-3.png');
+}
+
+button {
+    display: block;
+    background: #6D7F9B;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    align-self: flex-start;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5d6879;
+    transition: .3s;
+}

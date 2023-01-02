@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda Rowe - Portal</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <div
+            class="hero__subsection beauty-hero"
+            onClick="scrollFunction('beauty');"
+        >
+            <h3>
+                Beauty
+            </h3>
+            <img class="bg-image" src="/resources/images/hero-1-expanded.png" alt="Hero Image 1">
+        </div>
+        <div
+            class="hero__subsection music-hero"
+            onClick="scrollFunction('music');"
+        >
+            <h3>
+                Music
+            </h3>
+            <img class="bg-image" src="/resources/images/hero-2-expanded.png" alt="Hero Image 2">
+        </div>
+        <div
+            class="hero__subsection business-hero"
+            onClick="scrollFunction('business');"
+        >
+            <h3>
+                Business
+            </h3>
+            <img class="bg-image" src="/resources/images/hero-3-expanded.png" alt="Hero Image 3">
+        </div>
+    </section>
+    <section class="details-container">
+        <section
+            class="detail detail__beauty"
+            id="beauty"
+        >
+            <h3>Beauty is power.</h3>
+            <p>
+                "Everything has beauty, but not everyone sees it." - Check Amanda's beauty products and let the beauty in you glow!
+            </p>
+            <button>
+                More Details
+            </button>
+        </section>
+        <section
+            class="detail detail__music"
+            id="music"
+        >
+            <div class="detail__music-info">
+                <p>
+                    New EP out now!
+                </p>
+                <h3>"Got to Find My Way"</h3>
+                <p>
+                    "Instead of crumbling with the pain, I've got nothing to gain, I've got to Find My way" - Steam Amanda's latest single now! 
+                </p>
+                <a
+                    href="https://open.spotify.com/album/0tJgQKpCtTCyw330fI2EFo?si=UXdGLJAbTguMdQeIztKPnQ"
+                    target="_blank"
+                >
+                    <button>
+                        Stream Now
+                    </button>
+                </a>
+            </div>
+            <img src="resources/images/got-to-find-my-way-album-art.png" alt="Got To Find My Way Album Art">
+        </section>
+        <section
+            class="detail detail__business"
+            id="business"
+        >
+            <h3>Let's Talk Business</h3>
+            <p>
+                BPOSeats.com is a solutions provider for businesses of all sizes. It offers the most functional and reliable offices, seat leasing options, and custom solutions for the incredibly rising need of businesses opting to scale and grow in the Philippines.
+            </p>
+            <button>
+                Get Started
+            </button>
+        </section>
+    </section>
+    <script src="/resources/index.js"></script>
+</body>
+</html>
