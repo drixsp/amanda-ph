@@ -1,5 +1,7 @@
 * {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -7,6 +9,58 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: black;
+    padding: 0 24px;
+}
+
+nav i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+nav img {
+    height: 40px;
+}
+
+.menu-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    gap: 12px;
+    list-style-type: none;
+    /* Prevent selection of text */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    visibility: hidden;
+    transition: ease-in-out .3s;
+}
+
+.menu-overlay li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 100;
+    transition: ease-in-out .2s;
+}
+
+.menu-overlay li a:hover {
+    color: #6D7F9B;
 }
 
 .hero {
